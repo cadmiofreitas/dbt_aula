@@ -15,7 +15,7 @@ with prod as (
 ), ordrs as (
 
 select
-ord.order_date, ord.order_id, cs.company_name customer, em.nome employee, em.age, em.tempo_de_serviço
+ord.order_date, ord.order_id, cs.company_name customer, em.nome employee, em.age, em."tempo_de_serviço"
 
 
     from {{source('sources','orders')}} ord
@@ -30,4 +30,4 @@ ord.order_date, ord.order_id, cs.company_name customer, em.nome employee, em.age
     inner join ordrs ord on (od.order_id = ord.order_id)
 )
 
-select * from finaljoin
+
