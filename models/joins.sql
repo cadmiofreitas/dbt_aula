@@ -31,3 +31,6 @@ ord.order_date, ord.order_id, cs.company_name customer, em.nome employee, em.age
 )
 
 select * from finaljoin
+
+
+--mudança para teste
