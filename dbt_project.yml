@@ -1,6 +1,9 @@
 name: 'dbt_aula'
 version: '1.0.0'
 
+vars:
+  category: Seafood
+
 profile: 'default'
 
 model-paths: ["models"]
